@@ -33,7 +33,8 @@ const Calculator = () => {
     const chooseOperation = (el) => {
        if (current === "")return 
        const op = el.target.getAttribute('data')
-       
+
+
        if (previous !== ""){
            let value = compute()
            setPrevious(value)
@@ -52,8 +53,8 @@ const Calculator = () => {
        if (isNaN(previousNumber) || isNaN(currentNumber)) return 
        switch(operation){
             case "÷":
-               result = previousNumber / currentNumber
-               break
+                result = previousNumber / currentNumber
+                break
             case "×":
                 result = previousNumber * currentNumber
                 break
@@ -75,11 +76,10 @@ const Calculator = () => {
 
     const equals = () => {
         let value = compute()
-        if (value == undefined || value == null) return 
+        if (value === undefined || value === null) return
         setPrevious(previous + " " + operation + " " + current)
         setOperation(' =')
-        setCurrent(roundToNine(value))
-        
+        setCurrent(roundToNine(value)) 
     }
 
     return (

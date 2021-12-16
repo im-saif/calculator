@@ -3,17 +3,17 @@ export const Container = styled.div`
     display: grid;
     justify-content: center;
     align-content: center;
-    width: 400px;
+    width: 320px;
     margin: 40px auto;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
     box-shadow: 2px 2px 10px #333; 
     border-radius: 10px;
 `
 
 export const Screen = styled.div`
     grid-column: 1 / -1;
-    background-color: rgba(60, 64, 67, 0.75);
+    background-color: #23395d;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -37,12 +37,12 @@ export const Current = styled.div`
 
 export const Button = styled.button`
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: 1px outset white;
     outline: none;
-    background-color: rgba(255,255,255, 0.75);
+    background-color: rgba(255,255,255,0.75);
     &:hover {
-        background-color: rgba(255,255,255,0.9);
+        background-color: rgba(255,255,255,0.95);
     }
     ${({gridSpan}) => gridSpan && `grid-column: span ${gridSpan};`}
     ${({operation}) => operation && `background-color: gray;`}

@@ -1,11 +1,12 @@
 import Calculator from "./components/Calculator"
+import About from "./components/About/About";
 
 
 function App() {
   return (
     <div>
-    <title>Calculator</title>
-    < Calculator />
+    <Calculator/>
+    <About/>
     </div>
     
   )

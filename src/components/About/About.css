@@ -1,0 +1,18 @@
+.footer a img{
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: 500px;
+    top: 630px;
+    bottom: 20px;
+}
+
+#fb{
+    width: 55px;
+    left: 595px;
+}
+
+#twitter{
+    left: 720px;
+}
+
