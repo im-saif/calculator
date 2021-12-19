@@ -1,12 +1,13 @@
 import React from 'react'
 import "./About.css"
+import insta from "../pics/insta.png"
 
 function About() {
     const socials = [
         {
             id: "insta",
             link: "https://www.instagram.com/imsaifx/",
-            image: "https://o.remove.bg/downloads/6d7e0fdf-7620-4b93-b1f6-a753b0637c7c/images-removebg-preview.png"
+            image: insta
         },
         {   
             id: "fb",

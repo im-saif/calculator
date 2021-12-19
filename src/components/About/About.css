@@ -5,6 +5,7 @@
     left: 500px;
     top: 630px;
     bottom: 20px;
+    
 }
 
 #fb{
@@ -16,3 +17,15 @@
     left: 720px;
 }
 
+@media(max-width: 700px){
+    .footer a img{
+        position: absolute;
+        left: 100px;
+    }
+    #fb{
+        left: 200px;
+    }
+    #twitter{
+        left: 300px;
+    }
+}
